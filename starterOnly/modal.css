@@ -138,6 +138,20 @@ main {
   padding: 10px;
   font-family: var(--font-slab);
 }
+/* Modal Confirmation */
+.modal-body__confirmation {
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 500px;
+  text-align: center;
+}
+.modal-body__confirmation__text {
+  padding-bottom: 160px;
+}
+.modal-body__confirmation__btn-close {
+  margin: 0 auto;
+  width: 50%;
+}
 
 /* Modal form */
 

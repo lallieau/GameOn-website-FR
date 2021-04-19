@@ -24,7 +24,8 @@ function validate(event)
     });
 
     if(formularIsValid){
-        modalbg.style.display = "none";
+        modalForm.style.display = "none";
+        modalConfirmation.style.display = "flex";
     }
 
 }
