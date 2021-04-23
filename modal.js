@@ -30,5 +30,7 @@ function openModal() {
 
 function closeModal() {
   modalbg.style.display = "none";
+  document.location.reload();
+
 }
 

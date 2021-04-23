@@ -17,9 +17,6 @@ function validate(event)
                 element.setAttribute('data-error-visible', true);
                 formularIsValid = false;
             }
-            else {
-                element.setAttribute('data-error-visible', false);
-            }
         });
     });
 
