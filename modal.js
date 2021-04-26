@@ -9,6 +9,7 @@ function editNav() {
 
 // DOM Elements open and close modal
 const modalbg = document.querySelector(".bground");
+const modalContent = document.querySelector(".content");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const modalForm = document.querySelector(".modal-body__form");
 const modalConfirmation = document.querySelector(".modal-body__confirmation");
@@ -29,8 +30,9 @@ function openModal() {
 }
 
 function closeModal() {
-  modalbg.style.display = "none";
-  document.location.reload();
-
+  modalContent.style.animationName = "modalclose";
+  modalbg.style.visibility = "hidden";
 }
+
+
 

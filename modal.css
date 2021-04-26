@@ -183,6 +183,7 @@ main {
   width: 100%;
   overflow: auto;
   background-color: rgba(26, 39, 156, 0.4);
+  transition: 0.5s all linear;
 }
 
 .content {
@@ -557,5 +558,15 @@ footer {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes modalclose {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-150px);
+    opacity: 0;
   }
 }
