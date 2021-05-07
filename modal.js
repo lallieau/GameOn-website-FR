@@ -30,8 +30,9 @@ function openModal() {
 }
 
 function closeModal() {
-  modalContent.style.animationName = "modalclose";
-  modalbg.style.visibility = "hidden";
+  //modalContent.style.animationName = "modalclose";
+  modalbg.style.display = "none";
+  document.location.reload();
 }
 
 

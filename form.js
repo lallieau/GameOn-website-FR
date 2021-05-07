@@ -16,7 +16,9 @@ function validate(event)
             if(!input.checkValidity()){
                 element.setAttribute('data-error-visible', true);
                 formularIsValid = false;
-            }
+            }else {
+				element.setAttribute("data-error-visible", false)
+			}
         });
     });
 
