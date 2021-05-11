@@ -13,9 +13,9 @@ const dateInput = document.querySelector(".formData input[type=date]")
 // Check Validation
 
 function firstNameValidation() {
+    let regex = /^[^0-9]{2,}$/;
 	let inputValue = firstNameInput.value;
-	if (inputValue !== null && inputValue.length >= 2 && isNaN(inputValue)) return true;
-	else return false;
+	return regex.test(inputValue);
 }
 
 function lastNameValidation() {
