@@ -19,9 +19,9 @@ function firstNameValidation() {
 }
 
 function lastNameValidation() {
+    let regex = /^[^0-9]{2,}$/;
 	let inputValue = lastNameInput.value;
-	if (inputValue !== null && inputValue.length >= 2 && isNaN(inputValue)) return true;
-	else return false;
+	return regex.test(inputValue);
 }
 
 function emailValidation() {
